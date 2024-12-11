@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './PDoctors.css';
-//import doctor1 from '../img/doctor1.jpg';
+import doctor1 from '../img/doctor1.jpg';
 //import doctor2 from '../img/doctor2.avif';
 //import doctor3 from '../img/doctor3.avif';
 
