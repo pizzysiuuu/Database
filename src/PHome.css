@@ -1,0 +1,80 @@
+/* Home Page Styles */
+
+/* Navbar Styling */
+.home-page .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to right, #4caf50, #81c784);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.departments-page h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px; /* Space below the heading */
+}
+
+/* Navigation Links and Log Out Button Styling */
+.home-page .nav-button,
+.home-page .logout-btn {
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Links and Button 
+.home-page .nav-button:hover,
+.home-page .logout-btn:hover {
+  transform: scale(1.1);
+}*/
+
+/* Log Out Button Specific Positioning */
+.home-page .logout-btn {
+  position: fixed;
+  top: 15px; /* Position from top */
+  right: 15px; /* Position from right */
+  z-index: 1100; /* Ensure it's above other elements */
+}
+
+/* Main Content Styling */
+.home-page .content {
+  margin-top: 80px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Department Cards */
+.home-page .department {
+  background: #dff0d8;
+  border: 1px solid #c8e6c9;
+  color: #2e7d32;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Department Hover Effect */
+.home-page .department:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

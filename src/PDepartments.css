@@ -1,0 +1,156 @@
+/* Main Content Styling */
+.departments-page .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.departments-page h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px; /* Space below the heading */
+}
+
+/* Button Container */
+.departments-page .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Space between left and right columns */
+  width: 100%;
+  max-width: 800px; /* Limit width for better layout */
+}
+
+/* Button Column for Left and Right */
+.departments-page .button-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between buttons in the same column */
+}
+
+/* Department Buttons */
+.departments-page .department {
+  background: #dff0d8;
+  border: 1px solid #c8e6c9;
+  color: #2e7d32;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Buttons fill the grid column width */
+  max-width: 250px; /* Optional: Limit button width */
+}
+
+/* Hover Effect for Buttons */
+.departments-page .department:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Links and Log Out Button Styling */
+.departments-page .nav-button,
+.departments-page .logout-btn {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: absolute; /* Position relative to a parent container */
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
+}
+
+
+/* Button Container */
+.departments-page .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Increase space between columns */
+  flex-wrap: wrap; /* Allows wrapping for responsiveness */
+  width: 100%;
+  max-width: 900px; /* Slightly larger max width for layout */
+}
+
+/* Button Column */
+.departments-page .button-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Increase space between buttons */
+}
+
+/* Department Buttons */
+.departments-page .department {
+  background: #dff0d8;
+  border: 2px solid #c8e6c9; /* Slightly thicker border */
+  color: #2e7d32;
+  padding: 30px; /* Increase button padding */
+  border-radius: 15px; /* Larger border radius for rounded look */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
+  font-size: 20px; /* Increase font size */
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px; /* Larger button size */
+  width: 100%;
+}
+
+/* Hover Effect for Buttons */
+.departments-page .department:hover {
+  transform: translateY(-6px); /* Slightly higher hover effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+/* Button Container */
+.departments-page .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* Increase space between left and right columns */
+  flex-wrap: wrap; /* Allows wrapping for responsiveness */
+  width: 100%;
+  max-width: 900px; /* Maintain the layout width */
+}
+
+/* Button Column */
+.departments-page .button-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Increase space between buttons */
+}
+
+/* Department Buttons */
+.departments-page .department {
+  background: #dff0d8;
+  border: 2px solid #c8e6c9; /* Slightly thicker border */
+  color: #2e7d32;
+  padding: 30px; /* Increase button padding */
+  border-radius: 15px; /* Larger border radius for rounded look */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly larger shadow */
+  font-size: 20px; /* Increase font size */
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px; /* Larger button size */
+  width: 100%;
+}
+
+/* Hover Effect for Buttons */
+.departments-page .department:hover {
+  transform: translateY(-6px); /* Slightly higher hover effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+
