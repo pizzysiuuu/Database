@@ -115,3 +115,13 @@
   color: #2d7032;
   font-size: 14px;
 }
+
+
+.department-title {
+  font-size: 3rem; /* Increase text size */
+  font-weight: bold; /* Make text bold */
+  text-align: center; /* Center align the text */
+  margin-top: 10px; /* Adjust the space above */
+  margin-bottom: 20px; /* Adjust the space below */
+  color: #333; /* Optional: change the text color */
+}

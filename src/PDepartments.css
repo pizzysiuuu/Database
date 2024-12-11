@@ -14,14 +14,51 @@
   margin-bottom: 40px; /* Space below the heading */
 }
 
+.department-title {
+  font-size: 3rem; /* Increase text size */
+  font-weight: bold; /* Make text bold */
+  text-align: center; /* Center align the text */
+  margin-top: 10px; /* Adjust the space above */
+  margin-bottom: 20px; /* Adjust the space below */
+  color: #333; /* Optional: change the text color */
+}
+
 /* Button Container */
 .departments-page .button-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px; /* Space between left and right columns */
-  width: 100%;
-  max-width: 800px; /* Limit width for better layout */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* Space between boxes */
+  justify-items: center; /* Center align items horizontally */
+  margin-top: 20px; /* Space above the grid */
+
 }
+
+
+/* Department Cards */
+.departments-page .department {
+  background: #dff0d8;
+  border: 1px solid #c8e6c9;
+  color: #2e7d32;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px; /* Fixed width */
+  height: 120px; /* Fixed height */
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  word-wrap: break-word; /* Handle long text properly */
+}
+
+/* Department Hover Effect */
+.departments-page .department:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Button Column for Left and Right */
 .departments-page .button-column {
@@ -30,28 +67,7 @@
   gap: 20px; /* Space between buttons in the same column */
 }
 
-/* Department Buttons */
-.departments-page .department {
-  background: #dff0d8;
-  border: 1px solid #c8e6c9;
-  color: #2e7d32;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 18px;
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%; /* Buttons fill the grid column width */
-  max-width: 250px; /* Optional: Limit button width */
-}
 
-/* Hover Effect for Buttons */
-.departments-page .department:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
 
 /* Navigation Links and Log Out Button Styling */
 .departments-page .nav-button,
@@ -143,7 +159,7 @@
   font-weight: bold;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 300px; /* Larger button size */
+  max-width: 100px; /* Larger button size */
   width: 100%;
 }
 
@@ -154,3 +170,40 @@
 }
 
 
+/* Department Card Styling */
+.department {
+  background: #dff0d8;
+  border: 1px solid #c8e6c9;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 10px;
+  width: 250px;
+  height: 300px; /* Adjust to fit the image and text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.department:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Department Image Styling */
+.department-image {
+  width: 100%;
+  height: 180px; /* Adjust height for consistent image size */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Department Name Styling */
+.department-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+}

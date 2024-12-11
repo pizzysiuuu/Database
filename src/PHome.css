@@ -78,3 +78,12 @@
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+.history-title {
+  font-size: 3rem; /* Increase text size */
+  font-weight: bold; /* Make text bold */
+  text-align: center; /* Center align the text */
+  margin-top: 10px; /* Adjust the space above */
+  margin-bottom: 20px; /* Adjust the space below */
+  color: #333; /* Optional: change the text color */
+}

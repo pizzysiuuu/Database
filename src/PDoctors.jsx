@@ -1,9 +1,18 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './PDoctors.css';
-import doctor1 from '../img/doctor1.jpg';
-//import doctor2 from '../img/doctor2.avif';
-//import doctor3 from '../img/doctor3.avif';
+import doctor1 from '../src/img/doctor1.jpg';
+import doctor2 from '../src/img/doctor2.avif';
+import doctor3 from '../src/img/doctor3.avif';
+import doctor4 from '../src/img/doctor4.jpg';
+import doctor5 from '../src/img/doctor5.jpg';
+import doctor6 from '../src/img/doctor6.jpg';
+import doctor7 from '../src/img/doctor7.jpg';
+import doctor8 from '../src/img/doctor8.jpg';
+import doctor9 from '../src/img/doctor9.jpg';
+import doctor10 from '../src/img/doctor10.jpg';
+import doctor11 from '../src/img/doctor11.jpg';
+import doctor12 from '../src/img/doctor12.jpg';
 
 
 const Doctors = () => {
@@ -11,28 +20,28 @@ const Doctors = () => {
 
   const doctorsData = {
     dermatology: [
-      { name: 'Dr. Heart Specialist', specialty: 'Skin Care', image: 'doctor1' },
-      { name: 'Dr. Cardio Expert', specialty: 'Acne Specialist', image: 'doctor2' }
+      { name: 'Dr. Heart Specialist', specialty: 'Skin Care', image: doctor1 },
+      { name: 'Dr. Cardio Expert', specialty: 'Acne Specialist', image: doctor2 }
     ],
     pediatrics: [
-      { name: 'Dr. Kids Care', specialty: 'Child Health', image: 'doctor3' },
-      { name: 'Dr. Little Expert', specialty: 'Pediatric Specialist', image: 'path_to_image4.jpg' }
+      { name: 'Dr. Kids Care', specialty: 'Child Health', image: doctor3 },
+      { name: 'Dr. Little Expert', specialty: 'Pediatric Specialist', image: doctor4 }
     ],
     psychiatry: [
-      { name: 'Dr. Calm Mind', specialty: 'Mental Health', image: 'path_to_image5.jpg' },
-      { name: 'Dr. Peaceful Thoughts', specialty: 'Psychotherapy', image: 'path_to_image6.jpg' }
+      { name: 'Dr. Calm Mind', specialty: 'Mental Health', image: doctor5 },
+      { name: 'Dr. Peaceful Thoughts', specialty: 'Psychotherapy', image: doctor6 }
     ],
     cardiology: [
-      { name: 'Dr. Heart Specialist', specialty: 'Cardiac Health', image: 'path_to_image7.jpg' },
-      { name: 'Dr. Cardio Expert', specialty: 'Cardiology Expert', image: 'path_to_image8.jpg' }
+      { name: 'Dr. Heart Specialist', specialty: 'Cardiac Health', image: doctor7 },
+      { name: 'Dr. Cardio Expert', specialty: 'Cardiology Expert', image: doctor8 }
     ],
     neurology: [
-      { name: 'Dr. Brainy McSmart', specialty: 'Brain Health', image: 'path_to_image9.jpg' },
-      { name: 'Dr. Neuro Genius', specialty: 'Neurology Specialist', image: 'path_to_image10.jpg' }
+      { name: 'Dr. Brainy McSmart', specialty: 'Brain Health', image: doctor9 },
+      { name: 'Dr. Neuro Genius', specialty: 'Neurology Specialist', image: doctor10 }
     ],
     emergency: [
-      { name: 'Dr. Fast Responder', specialty: 'Critical Care', image: 'path_to_image11.jpg' },
-      { name: 'Dr. Emergency Pro', specialty: 'Emergency Medicine', image: 'path_to_image12.jpg' }
+      { name: 'Dr. Fast Responder', specialty: 'Critical Care', image: doctor11 },
+      { name: 'Dr. Emergency Pro', specialty: 'Emergency Medicine', image: doctor12 }
     ]
   };
 
@@ -48,7 +57,9 @@ const Doctors = () => {
         </div>
 
         <div className="content">
-          <h2>{department.charAt(0).toUpperCase() + department.slice(1)} Department</h2>
+          <h2 className="department-title">
+            {department.charAt(0).toUpperCase() + department.slice(1)} Department
+          </h2>
           <div className="doctors-container">
             {doctors.map((doctor, index) => (
               <div key={index} className="doctor-card">
