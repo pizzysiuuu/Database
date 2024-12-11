@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<Doctor_Home/>}/>
           <Route path="/doctor-home" element={<Doctor_Home/>}/>
           <Route path="/doctor-add" element={<Doctor_Add/>}/>
-          <Route path="/doctor-edit" element={<Doctor_Edit/>}/>
+          <Route path="/doctor-edit/:id" element={<Doctor_Edit/>}/>
           <Route path="/doctor-settings" element={<Doctor_Settings/>}/>
         </Routes>
       </Router>

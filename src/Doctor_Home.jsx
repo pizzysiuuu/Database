@@ -7,26 +7,16 @@ const Doctor_Home = () => {
     const [activeDropdown, setActiveDropdown] = useState(null);
     const dropdownRefs = useRef([]);
 
-    const toggleDropdown = (index) => {
+    const patients = [
+        { id: 1, name: "David" },
+        { id: 2, name: "Davis" },
+      ];
+
+    const toggleDropdown = (index,e) => {
+        e.stopPropagation();
         setActiveDropdown(activeDropdown === index ? null : index);
     };
 
-    const handleClickOutside = (event) => {
-        if (
-            dropdownRefs.current.every(
-                (ref) => ref && !ref.contains(event.target)
-            )
-        ) {
-            setActiveDropdown(null);
-        }
-    };
-
-    useEffect(() => {
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, []);
     return (
         <>
         <div className="container">
@@ -49,21 +39,21 @@ const Doctor_Home = () => {
         </div>
 
         <div className="content">
-                {['patients history', 'patients history', 'patients history'].map((history, index) => (
-                    <div key={index} className="card">
+                {patients.map((patient) => (
+                    <div key={patient.id} className="card">
                         <div className="card-content">
                             <div className='card-header'>
-                                Patient ID: xxx
+                                Patient ID: {patient.id}
                                 <br/>
                                 Date: dd/mm/yyyy
                             </div>
-                            {history}
+                            {patient.name}
                         </div>
                         <div className="card-actions">
-                            <button className="card-icon" onClick={() => toggleDropdown(index)}>...</button>
-                            {activeDropdown === index && (
-                                <div className="card-menu">
-                                    <Link to="/doctor-edit" className="card-item">
+                            <button className="card-icon" onClick={(e) => toggleDropdown(patient.id,e)}>...</button>
+                            {activeDropdown === patient.id && (
+                                <div className="card-menu" ref={(el) => dropdownRefs.current.push(el)}>
+                                    <Link to={`/doctor-edit/${patient.id}`} className="card-item" onClick={()=>console.log("edit")}>
                                         Edit
                                     </Link>
                                     <a href="#" className="card-item">Delete</a>

@@ -1,9 +1,10 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import './Doctor_Edit.css';
 
 const Doctor_Edit = () => {
+    const {index} = useParams();
     const [form, setForm] = useState({
         patientId: "",
         date: "",
@@ -40,7 +41,7 @@ const Doctor_Edit = () => {
     return (
       <>
       <div className='header'>
-        <a href='./doctor-home'>Home</a>
+        <a href='../doctor-home'>Home</a>
         <span>Edit Record</span>
       </div>
       <div className='container'>
