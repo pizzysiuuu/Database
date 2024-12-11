@@ -20,28 +20,28 @@ const Doctors = () => {
 
   const doctorsData = {
     dermatology: [
-      { name: 'Dr. Heart Specialist', specialty: 'Skin Care', image: doctor1 },
-      { name: 'Dr. Cardio Expert', specialty: 'Acne Specialist', image: doctor2 }
+      { name: 'Dr. William', specialty: 'Skin Care', image: doctor1 },
+      { name: 'Dr. Anastasya', specialty: 'Acne Specialist', image: doctor2 }
     ],
     pediatrics: [
-      { name: 'Dr. Kids Care', specialty: 'Child Health', image: doctor3 },
-      { name: 'Dr. Little Expert', specialty: 'Pediatric Specialist', image: doctor4 }
+      { name: 'Dr. Jacob', specialty: 'Child Health', image: doctor3 },
+      { name: 'Dr. Erica', specialty: 'Pediatric Specialist', image: doctor4 }
     ],
     psychiatry: [
-      { name: 'Dr. Calm Mind', specialty: 'Mental Health', image: doctor5 },
-      { name: 'Dr. Peaceful Thoughts', specialty: 'Psychotherapy', image: doctor6 }
+      { name: 'Dr. Nicolas', specialty: 'Mental Health', image: doctor5 },
+      { name: 'Dr. Mario', specialty: 'Psychotherapy', image: doctor6 }
     ],
     cardiology: [
-      { name: 'Dr. Heart Specialist', specialty: 'Cardiac Health', image: doctor7 },
-      { name: 'Dr. Cardio Expert', specialty: 'Cardiology Expert', image: doctor8 }
+      { name: 'Dr. Jessica', specialty: 'Cardiac Health', image: doctor7 },
+      { name: 'Dr. Maria', specialty: 'Cardiology Expert', image: doctor8 }
     ],
     neurology: [
-      { name: 'Dr. Brainy McSmart', specialty: 'Brain Health', image: doctor9 },
-      { name: 'Dr. Neuro Genius', specialty: 'Neurology Specialist', image: doctor10 }
+      { name: 'Dr. Scoot', specialty: 'Brain Health', image: doctor9 },
+      { name: 'Dr. Leony', specialty: 'Neurology Specialist', image: doctor10 }
     ],
     emergency: [
-      { name: 'Dr. Fast Responder', specialty: 'Critical Care', image: doctor11 },
-      { name: 'Dr. Emergency Pro', specialty: 'Emergency Medicine', image: doctor12 }
+      { name: 'Dr. Grace', specialty: 'Critical Care', image: doctor11 },
+      { name: 'Dr. Kent', specialty: 'Emergency Medicine', image: doctor12 }
     ]
   };
 

@@ -2,16 +2,16 @@
 
 /* Navbar Styling */
 .home-page .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 60px;
-  display: flex;
+  position: fixed; /* Makes the navbar stay fixed at the top */
+  top: 0; /* Stick to the top of the page */
+  width: 100%; /* Full-width navbar */
+  height: 60px; /* Navbar height */
+  display: flex; /* Flexbox for aligning items */
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(to right, #4caf50, #81c784);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  background: linear-gradient(to right, #4caf50, #81c784); /* Gradient background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensure it appears above other elements */
 }
 .departments-page h2 {
   font-size: 32px;
