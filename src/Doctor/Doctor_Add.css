@@ -1,0 +1,99 @@
+.container {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: bold;
+    background-color: #494b4d;
+    color: white;
+    font-size: larger;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.doc-home:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.label, .biglabel {
+    display: flex;
+    gap: 5px;
+}
+
+textarea {
+    height: 120px;
+    padding: 10px;
+    width: calc(100% - 150px);
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+label {
+    flex: 1;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    width: calc(100% - 150px);
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.save-btn {
+    margin: 0 auto;
+    width: 10rem;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #0e5eb3;
+}
+
+@media (max-width:600px) {
+    .label, .biglabel {
+        flex-direction: column;
+        align-items: flex-start !important;
+        width: 100%;
+    }
+    .label label, .biglabel label {
+        text-align: left;
+    }
+    input, textarea {
+        width: 100% !important;
+    }
+}

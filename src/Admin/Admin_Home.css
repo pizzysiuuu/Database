@@ -1,0 +1,164 @@
+.container {
+    width: 100%;
+    gap: 20px;
+}
+
+.d-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    gap: 15px;
+    background-color: #494b4d;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+    box-sizing: border-box;
+    font-size: larger;
+}
+
+.d-navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.doc-home:hover {
+    text-decoration: underline;
+}
+
+.d-navbar .search {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.d-navbar .search input {
+    width: 100%;
+    padding: 5px;
+    background-color: #e9ecef;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.d-navbar .add-doctor {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+.d-navbar .add-record:hover {
+    background-color: #0e5eb3;
+}
+
+.d-navbar .dropdown {
+    position: relative;
+}
+
+.d-navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1100;
+}
+
+.d-navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.d-navbar .dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.d-navbar .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.a-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.a-card {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.acard-content {
+    flex: 1;
+    text-align: left;
+}
+
+.acard-header {
+    font-weight: bold;
+}
+
+.acard-actions {
+    position: relative;
+    z-index: 1010;
+}
+
+.acard-icon {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.acard-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px 0;
+    z-index: 1020;
+}
+
+.acard-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    font-size: 14px;
+}
+
+.acard-item:hover {
+    background-color: #f1f1f1;
+    color: #007bff;
+}
+
+@media (max-width: 600px) {
+    .d-navbar .add-doctor::after {
+        content: "Add";
+    }
+    .d-navbar .add-doctor span {
+        display: none;
+    }
+}

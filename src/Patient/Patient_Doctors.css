@@ -1,0 +1,56 @@
+.doc-page .doc-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  
+.doc-page h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+  
+.doc-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+  
+.doc-card {
+    background: #dff0d8;
+    border: 1px solid #c8e6c9;
+    color: #2e7d32;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 200px;
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+}
+  
+.doc-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.doc-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    aspect-ratio: 1/1;
+}
+
+@media (max-width:500px) {
+    .doc-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
