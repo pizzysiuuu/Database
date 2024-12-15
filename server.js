@@ -133,15 +133,17 @@ app.post('/api/add-doctor', upload.single('doctorPicture'), (req, res) => {
       return res.status(500).json({ message: "Failed to add doctor" });
     }
     const d_ID = `d${result.insertId}`;
-    const updateDIdQuery = `UPDATE doctors SET d_ID = ?, d_pic = ? WHERE doc = ?`;
-    const pictureBuffer = doctorPicture.buffer;
-    Server.query(updateDIdQuery, [d_ID, pictureBuffer, result.insertId], (err) => {
+    const updateDIdQuery = `UPDATE doctors SET d_ID = ? WHERE doc = ?`;
+    Server.query(updateDIdQuery, [d_ID, result.insertId], (err) => {
       if (err) {
         console.error("Error saving picture:", err);
         return res.status(500).json({ message: "Error saving picture" });
       }
       res.status(200).json({ d_ID });
     });
+    const updatePicQuery = `UPDATE doctors SET d_pic = ? WHERE doc = ?`;
+    const pictureBuffer = doctorPicture.buffer;
+    Server.query(updatePicQuery, [pictureBuffer, result.insertId]);
   });
 });
 
