@@ -112,7 +112,7 @@ const Doctor_Edit = () => {
           <div className='label'>
             <label>Room Number</label>
             <input
-              type="text"
+              type="number"
               name="room"
               value={form.room}
               onChange={handleChange}

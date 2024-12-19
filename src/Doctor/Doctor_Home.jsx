@@ -17,7 +17,12 @@ const Doctor_Home = () => {
                   ? `http://localhost:3001/api/search-records?doctorId=${doctorId}&keyword=${searchKeyword}`
                   : `http://localhost:3001/api/fetch-drecord?doctorId=${doctorId}`;
               fetch(url)
-                  .then((response) => response.json())
+                    .then((response) => {
+                        if (!response.ok) {
+                        throw new Error('Failed to fetch patient history');
+                        }
+                        return response.json();
+                    })
                   .then((data) => {
                     setPatients(data);
                   })

@@ -96,7 +96,7 @@ const Doctor_Add = () => {
           <div className='label'>
             <label>Room Number</label>
             <input
-              type="text"
+              type="number"
               name="roomNumber"
               value={form.roomNumber}
               onChange={handleChange}
